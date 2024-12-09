@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Tahun Sejarah</title>
+    <link rel="stylesheet" href="Game.css">
+</head>
+<body>
+    <!-- Halaman awal -->
+    <div class="welcome-container">
+        <h1>Tebak Tahun Sejarah</h1>
+        <p>Bisakah kamu menebak kapan peristiwa ini terjadi?</p>
+        <button onclick="startGame()">Mulai Permainan</button>
+    </div>
+
+    <!-- Halaman game -->
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <h2 id="question">Kapan peristiwa ini terjadi?</h2>
+        <div id="answers" class="answers">
+            <!-- Pilihan jawaban akan ditambahkan secara dinamis -->
+        </div>
+        <p id="result"></p>
+        <button id="nextButton" onclick="nextQuestion()" style="display: none;">Pertanyaan Berikutnya</button>
+    </div>
+
+    <!-- Script -->
+    <script src="Game.js"></script>
+</body>
+</html>
